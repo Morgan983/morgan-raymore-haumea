@@ -1,0 +1,62 @@
+body {
+    background-color: #DB9625;
+}
+h1{
+    color: #1BECEC;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 2px black;
+}
+h2 {
+    color: #D2A1E8;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px black;
+}
+#About li {
+    list-style: none;
+    font-size: 20px;
+}
+#Experience ul {
+    padding: 0;
+}
+#Experience li {
+    background-color: #f4f4f4; 
+    border: 15px solid #ddd;
+    margin-bottom: 6px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#Experience strong {
+    display: block;
+    margin-bottom: 10px;
+    color: #228A2A; 
+    font-size: 1.2em;
+}
+#Experience p strong {
+    margin: 0px 10px;
+    line-height: 1.6;
+    color: #EE1BE8; 
+    text-shadow: 1px 1px black;
+}
+#Connect ul {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+    word-spacing: 10px;
+}
+
+#Connect li {
+    display: inline-block;
+    margin: 0px;
+    background-color: antiquewhite;
+}
+
+#Connect a {
+    text-decoration: none;
+    text-shadow: 1px 1px black;
+    color: #19c28f;
+}
+
+#Connect a:hover {
+    color: #D30A1F;
+    text-shadow: 1px 1px black;
+}
