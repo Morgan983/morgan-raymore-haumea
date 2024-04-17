@@ -15,48 +15,52 @@ h2 {
     list-style: none;
     font-size: 20px;
 }
-#Experience ul {
-    padding: 0;
+#experience {
+    margin: 20px 0;
 }
-#Experience li {
-    background-color: #f4f4f4; 
-    border: 15px solid #ddd;
-    margin-bottom: 6px;
-    padding: 10px;
-    border-radius: 10px;
+.experience-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
-#Experience strong {
-    display: block;
-    margin-bottom: 10px;
-    color: #228A2A; 
-    font-size: 1.2em;
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
-#Experience p strong {
-    margin: 0px 10px;
-    line-height: 1.6;
-    color: #EE1BE8; 
-    text-shadow: 1px 1px black;
+.job-title {
+    margin-right: 10px;
 }
-#Connect ul {
-    list-style: none;
-    padding: 0;
+.job-dates {
+    text-align:right ;
+    flex-grow: 1;
+}
+.job-description {
+    margin-block: 10px;
+}
+#Connect {
+    margin: 20px 0;
+}
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.social-link {
     font-size: 20px;
-    word-spacing: 10px;
+    text-decoration: pink wavy underline;
+    color: turquoise;
+    background: green;
 }
-
-#Connect li {
-    display: inline-block;
-    margin: 0px;
-    background-color: antiquewhite;
+.social-link2 {
+    font-size: 20px;
+    text-decoration: pink wavy underline;
+    color: turquoise;
+    background: green;
 }
-
-#Connect a {
-    text-decoration: none;
-    text-shadow: 1px 1px black;
-    color: #19c28f;
-}
-
-#Connect a:hover {
-    color: #D30A1F;
-    text-shadow: 1px 1px black;
+.social-link3 {
+    font-size: 20px;
+    text-decoration: pink wavy underline;
+    color: turquoise;
+    background: green;
 }
