@@ -1,8 +1,82 @@
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 16px;
+        color: darkblue;  
+    }
+    #About li {
+        padding: 5px;
+        background-color: lightgreen;
+    }
+    .social-link {
+        font-size: 30px;
+        color: darkred;
+    }
+} /*this is for extra small screens*/
+
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 18px;
+        color: darkblue;  
+    }
+    #About li {
+        margin: 10px 0;
+        background-color: lightcoral;
+    }
+    .social-link {
+        font-size: 16px;
+        color: darkmagenta;
+    }
+} /*this is for small screens*/
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 20px;
+        color: darkcyan;  
+    }
+    #About li {
+        padding: 15px;
+        background-color: #AFEEEE;
+    }
+    .social-link {
+        font-size: 18px;
+        color: #A52A2A;
+    }
+} /*this is for medium screens*/
+
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-size: 22px;
+        color: #4169E1;  
+    }
+    #About li {
+        margin: 20px 0;
+        background-color: #FFFACD;
+    }
+    .social-link {
+        font-size: 20px;
+        color: #FA8072;
+    }
+} /*this is for large screens like desktops or laptops*/
+
+@media only screen and (min-width: 1200px) {
+    h1 {
+        font-size: 24px;
+        color: #0000CD;  
+    }
+    #About li {
+        padding: 25px;
+        background-color: #E6E6FA;
+    }
+    .social-link {
+        font-size: 20px;
+        color: #FF4500;
+    }
+} /*this is for extra large screens like Macbook desktops or the large curved Windows desktops*/
+
 body {
     background-color: #DB9625;
 }
-h1{
-    color: #1BECEC;
+h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-shadow: 2px 2px black;
 }
@@ -47,9 +121,7 @@ h2 {
     gap: 20px;
 }
 .social-link {
-    font-size: 20px;
     text-decoration: pink wavy underline;
-    color: turquoise;
     background: green;
 }
 .social-link2 {
