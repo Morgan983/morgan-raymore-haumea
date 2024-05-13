@@ -66,3 +66,28 @@ messageForm.addEventListener('submit', function(event) {
 
     event.target.reset();
 });
+
+fetch('https://api.github.com/users/Morgan983/repos')
+    .then(response => response.json())
+    .then(repositories => {
+        console.log(repositories);
+    })
+    .catch(error => {
+        console.error('Error fetching data: ', error);
+    });
+
+    const projectSection = document.getElementById('projects');
+    const projectList = projectSection.querySelector('ul');
+
+fetch('https://api.github.com/users/Morgan983/repos')
+    .then(response => response.json())
+    .then(repositories => {
+        repositories.forEach(repo => {
+            const project = document.createElement('li');
+            project.innerText = repo.name;
+            projectList.appendChild(project);
+        });
+    })
+    .catch(error => {
+        console.error('Error fetching GitHub repositories:', error);
+    });
