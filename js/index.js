@@ -12,11 +12,10 @@ var thisYear = today.getFullYear();
 
 var footer = document.querySelector('footer');
 
-var copyright = document.createElement('p');
-
 var myName = "Morgan Raymore";
-var copyrightContent = `© ${2024} ${myName}`;
+var copyrightContent = `© ${thisYear} ${myName}`;
 
+var copyright = document.createElement('p');
 copyright.innerHTML = copyrightContent;
 
 footer.appendChild(copyright);
@@ -36,6 +35,8 @@ for (let i = 0; i < skills.length; i++) {
     skillsList.appendChild(skill);
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+
 const messageForm = document.forms.leave_message;
 messageForm.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -48,8 +49,10 @@ messageForm.addEventListener('submit', function(event) {
 
     const messageSection = document.getElementById('messages');
     const messageList = messageSection.querySelector('ul');
+    
+    if (messageList) {
+    
     const newMessage = document.createElement('li');
-
     newMessage.innerHTML = '<a href="mailto:${userEmail}">${userName}</a><span>: ${userMessage}</span>';
 
     const removeButton = document.createElement('button');
@@ -58,23 +61,16 @@ messageForm.addEventListener('submit', function(event) {
 
     removeButton.addEventListener('click', function() {
         const entry = this.parentNode;
-        entry.removeChild();
+        entry.remove();
     });
 
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
-
+    
+}
     event.target.reset();
-});
-
-fetch('https://api.github.com/users/Morgan983/repos')
-    .then(response => response.json())
-    .then(repositories => {
-        console.log(repositories);
-    })
-    .catch(error => {
-        console.error('Error fetching data: ', error);
     });
+});
 
     const projectSection = document.getElementById('projects');
     const projectList = projectSection.querySelector('ul');

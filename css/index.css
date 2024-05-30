@@ -89,13 +89,18 @@ h2 {
     list-style: none;
     font-size: 20px;
 }
-#experience {
-    margin: 20px 0;
+
+section {
+    margin-bottom: 20px;
+}
+
+#Experience {
+    margin-bottom: 10px;
 }
 .experience-item {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-top: 0px;
 }
 .experience-header {
     display: flex;
@@ -104,10 +109,11 @@ h2 {
 }
 .job-title {
     margin-right: 10px;
+    border-style: groove;
 }
 .job-dates {
-    text-align:right ;
-    flex-grow: 1;
+    text-align: left;
+    border-style: double;
 }
 .job-description {
     margin-block: 10px;
